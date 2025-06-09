@@ -1,0 +1,206 @@
+LINUX COMMANDS
+---------------
+1-echo
+	echo "example text"
+	 print in terminal
+	echo "content" > <filename>
+	 print into file
+
+2 - c
+	word count
+	wc <filename>
+	return no.of lines no.of words no.of lines filename
+	-l no.of lines
+	-m no.of character
+	-c no.of bytes
+piping output i=of one command is taken as input of another command
+	date | wc
+3.sort
+-f ignore case
+-n numeric sort
+-nr reverse numeric sort	
+-un unique number sort
+-h human readable
+
+4.uniq
+remove adjacent duplicate values
+piping sort and unique
+-d duplicates
+-u unique
+-c count
+
+ sort filename |uniq -c|sort -n==>sort bu=y word count
+
+5.expansion
+$PATH
+* EVERY PATH
+? character count
+{a,b,c}==>abc
+{a,b,c}.txt==>a.txt b.txt c.txt
+{1..99}==>1 to 99
+
+6.diff
+ diff <filename1><filename2>
+-u diff in version
+
+7.find
+find . -name "*.js"
+. current location
+-type
+-i insenzitive
+-size==>+greter - lessser
+-mtime
+
+8-grep
+matches
+-r recursive
+-i case insensitive
+
+9-du
+file usage space
+-h human readable
+
+
+10-df
+disk usage information
+-h human readable
+
+11-history
+
+12-ps
+process status
+-ax list all running process
+-axww wider command and display
+
+13-top
+display real time information about system resourse usage
+-o mom ==>memory
+
+14-kill
+terminate program
+kill<process id> so it send trm signal to process
+-l list kill by default 15(sigterm)
+-9 -sigkill  kill
+
+15-killall
+sent signal to multiple process
+killall -9 <name>
+
+
+16-jobs
+list jobs started in current shell session
+   
+a-fg
+fg <process no>
+
+b-bg
+bg <process no>
+&
+
+
+17-sleep
+wait
+sleep <seconds>
+
+18-gzip
+compresss file and append .gz
+it delete orginsl file to avoid it use -c or -k
+gzip <filename>
+-d decompress
+
+19-gunzip
+-d always enabled by default
+
+20-tar
+group multiple file into a single file   
+-c create
+-f write to file the archieve
+tar -cf <destination.tar><source>
+
+-x extract
+-t list content
+
+21-nano
+beginner friendly editor
+nano<filename>
+without worrying about mode you can type character
+-x close
+
+22-alias
+custom name for a command
+alias <command>="name"
+
+23-xargs
+|
+convert input from standard input into arguments to a command
+
+24-in
+create links which is pointer to another file
+
+a-hardlink
+ln<orginal><link>
+cannot link to directories and external file system
+
+b-softlink
+-s
+
+25-who
+user logged in to system
+
+26-su
+switch user
+su<username>
+
+exit to exit from user
+
+27-sudo
+run commands as root
+
+28-passwd
+to change password
+
+29-chown
+change owner to user
+chown <owner>:<group><file>
+
+
+fle type
+- regular
+d directory
+
+permission
+==========
+-r read
+-w write
+-x execute
+
+30-chmod
+chmod mode file
+
+who==
+ u user
+ g group
+ o other
+a all of the above
+
+what==
+- remove permission
++ grant permission
+= set a permission and remove others
+
+which==
+read 
+write
+execute
+
+octal  binary file mode
+0	000	---
+1	001	--x
+2	010	-w-
+3	011	-wx
+4	100	r--
+5	101	r-x
+6	110	rw-
+7	111	rwx
+
+a=r can read all and other remove
