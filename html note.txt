@@ -1,8 +1,41 @@
 HTML
 ======
 structure content using tags   
-from
+
+form
 ------
-name field is used n serverside
+name field is used in serverside
 css 
-====                         
+====  
+inline element
+--------------
+Don't take up any more room than their content need
+
+eg:<span>,<em>,<a>
+-you can change to Block
+  display:Block
+
+-You can apply:
+
+✅ padding-left and padding-right
+
+✅ margin-left and margin-right
+
+❌ margin-top and margin-bottom may have no visible effect
+
+❌ padding-top and padding-bottom usually don't change line height
+
+Block element
+---------------
+Take up the whole width of page
+eg:<div>,<h>,<li>,<p>
+- you can change to inline element by
+   display:inline
+
+- Margin (outside spacing) and padding (inside spacing) work in all directions
+
+-You can apply margin and padding in all four directions.
+
+❌❌❌❌❌❌❌❌❌❌
+display:inline-block
+- combines the features of both inline and block elements
