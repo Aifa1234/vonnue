@@ -1,0 +1,29 @@
+h1{
+    color:chartreuse;
+    background-color:whitesmoke;
+    font-size:30px;
+    text-decoration:double;
+    font-family: Arial;
+    text-align:center;
+}               
+p{
+    line-height: 25px;
+    letter-spacing: 2px;
+    column-count: 3;
+    column-gap: 30px;
+}   
+ ul{
+    /* border-width: 4px;
+    border-style:dotted;
+    border-color: blue; */
+    border: 4px dotted blue;
+    border-top:3px solid yellow;
+ }
+li{
+    list-style-type: circle;
+    text-shadow: 2px 2px lightgray;
+}
+div{
+    border: 2px solid red;
+    
+}
