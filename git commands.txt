@@ -1,0 +1,116 @@
+git commands
+===========
+Version Control System
+Language Independent
+
+1-init
+– Initialize a Git repository
+
+2-git status 
+– Check current status
+
+3-.gitignore 
+– Specify files/folders to ignore
+
+4-commit
+- git commit -m<"message">--commit with message
+
+5 - log
+- show commit history
+
+6- add
+- git add <filename> – Add specific file to staging
+
+- git add . – Add all files in current directory
+
+7- checkout
+- git checkout <commit-id> – Move to a specific snapshot
+
+- git checkout main – Switch to main branch
+
+- git checkout HEAD -f – Discard modifications
+
+- git checkout <filename> – Restore specific file
+HEAD – Points to the latest snapshot
+
+8- Restore
+git reset --soft <commit-id> – Move HEAD, keep changes staged
+
+git reset --hard <commit-id> – Reset completely
+
+9- branch 
+- sequence of commit
+
+- git branch – List branches
+
+- git branch <branch-name> – Create new branch
+
+- git checkout <branch-name> – Switch branch
+
+- git branch -d <branch-name> – Delete branch
+
+- git branch -D <branch-name> – Force delete
+
+- git branch -a – List all (local + remote) branches
+
+- git branch -vv – Show branch info with last commit
+
+10- merge
+- merge a branch to current branch
+
+- git merge <branch-name>
+
+10- conflict
+- need to change manually then add and commit
+
+11- cherry-pick
+- selected commit from a branch added to main branch
+
+- cherry-pick<commit id>
+
+12- diff
+- git diff – See unstaged changes
+
+- git diff <commit1> <commit2> – Compare two commits
+
+- git diff HEAD~1 HEAD – Compare last commit with current
+
+- git diff HEAD~1 HEAD --name-only – Show modified files
+
+13- Restore
+- git restore <filename> – Discard changes in file
+
+14- clone
+- git clone <repo-url> – Clone a repository
+
+14- fetch
+- Get updates without applying
+
+15- merge
+ - change
+
+ 16- git pull – Fetch + merge
+
+ 17- push 
+- git push <remote> <branch> – Push to remote
+
+-u – Set upstream
+-f - force push
+
+18-pull request
+
+19- Review
+
+Merging strategies
+==================
+Fast-forward merge – Moves HEAD to latest commit if no divergence
+
+Three-way merge – Used when branches have diverged
+    linear history
+    git checkout<remote>
+    git rebase main
+    git merge
+
+git pull --rebase
+    fetch+rebase=pull --rebase
+    git rebase --continue 
