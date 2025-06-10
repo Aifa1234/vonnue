@@ -25,5 +25,54 @@ li{
 }
 div{
     border: 2px solid red;
-    
+
+}
+/* selectors */
+/* --class-- */
+.one{
+    color:cadetblue;
+}
+
+p.one{
+    color:chartreuse;
+}
+
+h1.one.two{
+    color:brown;
+}
+/* ---id--- */
+#content{
+    color: pink;
+}
+div#content{
+    color:yellow
+}
+
+
+a[ href="google.com"]{
+    color:black;
+    background-color: blueviolet;
+    text-transform: uppercase;
+}
+a[href*="instagram"]{
+    color:chartreuse
+}  
+
+/* end with .com */
+a[href$=".com"]{
+    color:chartreuse
+}    
+
+div{
+    text-decoration: solid;
+   
+    margin:30px
+}
+p{
+    border:inherit;
+    text-transform:lowercase;
+}
+  
+div p{
+    text-transform:uppercase;
 }

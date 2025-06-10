@@ -39,3 +39,21 @@ eg:<div>,<h>,<li>,<p>
 ❌❌❌❌❌❌❌❌❌❌
 display:inline-block
 - combines the features of both inline and block elements
+
+INHERITANCE
+ IINHERIT
+ --------
+ inherit is a CSS keyword used to explicitly tell a property to inherit its value from its parent element
+ lower one is more specific
+ more specific is selected
+
+ HTML SEMANTIC tags
+ ==================
+ <main>
+ <section>
+ <article>
+ <aside>
+ <nav>
+ <header>
+ <footer>
+

@@ -114,3 +114,11 @@ Three-way merge – Used when branches have diverged
 git pull --rebase
     fetch+rebase=pull --rebase
     git rebase --continue 
+
+git pull --rebase – update with a clean history
+
+git rebase --continue – continue after fixing a conflict
+
+git rebase --abort – cancel rebase and go back
+
+git push -f – force push after rebase (if you've already pushed before)
