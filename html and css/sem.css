@@ -1,5 +1,7 @@
 body, ul, li, h1, h2, a{
     margin:0;
+    padding:0;
+    font-family: arial;
 
 }
 
@@ -15,10 +17,10 @@ header{
 }
 header h1{
     color:white;
-    border:8px solid white;
+    border:5px solid white;
     padding: 6px 12px;
     display:inline-block;
-    border-radius: 30px;
+    border-radius: 300px;
 }
 .banner{
    position:relative
@@ -45,7 +47,7 @@ nav{
     background-color: aliceblue;
     padding: 10px;
     position:sticky;
-    top: 130px;
+    top: 50px;
 }
 nav ul{
     white-space: nowrap;
@@ -63,6 +65,97 @@ nav li a{
     color:black;
     text-decoration:none;
 }
+ /* nav li a.join{
+    color:red;
+}  */
+main{
+    max-width:100%;
+    width:1200px;
+    margin:80 px auto;
+    padding:0 20px;
+    box-sizing:border-box;
+}     
+article h2{
+    color:red;
+    font-size:48px;
+}
+article p{
+    line-height:2em;
+    color:black;
+}  
+.images{
+   text-align:left;
+   margin:10px 0;
+   padding-left: 0px;
+   white-space: nowrap;
+}
+.images li{
+    display:inline-block;
+    width: 40%;
+    margin:0px 5%;
+}
+.images li img{
+    max-width:100%;
 
+}
+.join{
+    background-color:rgb(234, 207, 207);
+    text-align:center;
+    padding:60px 20px;
+    color:#4b4b4b;
+}
+.join h2{
+    font-size:35px;
+}
+form input{
+    margin:20px 0;
+    padding:10px 20px;
+    font-size: 24px;
+    border-radius: 28px;
+    border:4px solid white;
+}
+footer{
+   background-color: red; 
+   color:white;
+   padding:10px;
+   text-align:center;
+}
 
-      
+/* ---Pseudoclass--- */
+nav li a:hover{
+    text-decoration:underline;
+    background-color: pink;
+    padding:3px;
+}    
+.images li:hover{
+    position:relative;
+    left:-4px;
+}
+form input:focus{
+   border:dotted;
+}
+form input:valid{
+    border-color: green;
+}
+form input:invalid{
+    border-color: red;
+}
+nav li:first-child{
+    border:4px solid red;
+    border-radius: 30px;
+} 
+
+/* ---Psudo elements--- */
+article p::first-line{
+    font-size: bold;
+    font-size: 1.2em;
+}
+.join p::first-letter{
+    font-size: 1.5em;
+}
+section.join p::selection{
+    background-color:red;
+}
+p::after{
+    content:"hello"
+}
