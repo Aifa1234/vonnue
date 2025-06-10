@@ -53,7 +53,57 @@ INHERITANCE
  <section>
  <article>
  <aside>
- <nav>
+ <nav>  
  <header>
  <footer>
 
+ HTML position and layout
+ ========================
+ static
+ relative
+ fixed
+ absolute
+ sticky
+
+
+ box sizing
+ ==========
+ content-box
+ ----------
+   div {
+  width: 200px;
+  padding: 20px;
+  border: 10px solid black;
+  box-sizing: content-box;
+   }
+
+   width=200+40+20
+ 
+ border-box
+ -----------
+ div {
+  width: 200px;
+  padding: 20px;
+  border: 10px solid black;
+  box-sizing: border-box;
+}
+ Width = exactly 200px total
+         content + padding + border
+
+Pseudo Classes
+==============
+style elements when they are in a particular started
+eg:hover focus first child of a parent
+
+
+Media Queries
+=============
+tell the browser how to style an element at particular viewport
+
+viewport meta tags
+=================
+tell the browser what width the viewport
+
+responsive images
+=================
+only load smaller images for mobile devices
