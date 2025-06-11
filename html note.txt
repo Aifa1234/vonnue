@@ -101,6 +101,11 @@ Media Queries
 =============
 tell the browser how to style an element at particular viewport
 
+syntax:
+  @media<media type> and(expression){
+
+  }
+
 viewport meta tags
 =================
 tell the browser what width the viewport
@@ -108,4 +113,10 @@ tell the browser what width the viewport
 responsive images
 =================
 only load smaller images for mobile devices
-                    
+tablet 768px
+mobiles 480px
+
+fixed and fluid layout
+-----------------------
+fluid layout-makes web page responsive and uses relative measurement
+                   
