@@ -122,3 +122,8 @@ git rebase --continue – continue after fixing a conflict
 git rebase --abort – cancel rebase and go back
 
 git push -f – force push after rebase (if you've already pushed before)
+                             
+                              
+                               
+                                
+                                        

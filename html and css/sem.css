@@ -37,8 +37,9 @@ header h1{
 }
 .banner h2 {
     color: white;
-    font-size:20px;
-    text-decoration:double
+    font-size:50px;
+    text-decoration:double;
+    z-index: 1;
 }
 .banner h2 span{
     font-size: 1.4em;
@@ -140,10 +141,10 @@ form input:valid{
 form input:invalid{
     border-color: red;
 }
-nav li:first-child{
+/* nav li:first-child{
     border:4px solid red;
     border-radius: 30px;
-} 
+}  */
 
 /* ---Psudo elements--- */
 article p::first-line{
@@ -156,14 +157,14 @@ article p::first-line{
 section.join p::selection{
     background-color:red;
 }
-p::after{
+/* p::after{
     content:"hello"
-}
+} */
 
 /* ---RESPONSIve--- */
 @media screen and (max-width: 1400px){
     .banner .welcome h2{
-        font-size:50px;
+        font-size:40px;
     }
     nav li{
         font-size:18px;
@@ -177,15 +178,16 @@ p::after{
 }  
 @media screen and (max-width: 700px){
     .banner .welcome{
-        position:relative; 
-        text-align:center;
-        padding:10px;
+        position: static;
+        text-align: center;
+        padding: 20px;
     }
     .banner .welcome br{
         display:none
     } 
     .banner .welcome h2{
         font-size:15px;
+        
     }
     .banner .welcome span{
         font-size:1em;
@@ -211,5 +213,5 @@ p::after{
     }
     
 } 
-      
+ 
   

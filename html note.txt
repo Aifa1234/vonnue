@@ -107,3 +107,4 @@ tell the browser what width the viewport
 responsive images
 =================
 only load smaller images for mobile devices
+                
