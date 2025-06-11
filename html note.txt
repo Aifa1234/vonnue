@@ -57,13 +57,14 @@ INHERITANCE
  <header>
  <footer>
 
- HTML position and layout
+ HTML position and layout--(z index)
  ========================
  static
  relative
  fixed
  absolute
  sticky
+inherit     
 
 
  box sizing
@@ -107,4 +108,4 @@ tell the browser what width the viewport
 responsive images
 =================
 only load smaller images for mobile devices
-                
+                    
