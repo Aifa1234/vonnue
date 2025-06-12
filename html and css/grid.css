@@ -55,6 +55,9 @@ nav ul.social li{
     flex:1 1 0;
 
 }
+.one{
+    order:2
+}
     
 @media screen and (min-width:400px){
     nav ul{
