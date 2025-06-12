@@ -10,27 +10,126 @@ body{
     max-width: 960px;
     margin:0 auto;
 }
-.flex-container{
-     //display:flex;
-     background-color: aqua;
-}  
-.flex-container:after{
-    clear:none;
-    content:"";
-    display:block
+     /* =====flex=====
+    .flex-container{
+        display:flex;
+        background-color: rgb(230, 225, 225);
+        ===flex wrap===
+        flex-wrap: wrap; 
+    }  
+     ====alternate==== 
+     .flex-container:after{
+        clear:none;
+        content:"";
+        display:block;
+
+    } 
+    .box{
+        height:100px;
+         ===flex basis=== 
+        flex-basis: 200px;
+
+
+         float: left; 
+         flex-grow: 1; 
+                
+    }
+    .one{
+        background-color: red;
+         ===flex grow===
+        flex-grow: 1; 
+
+         ===flex shrink===
+        flex-shrink: 1; 
+
+         ===flex basis=== 
+        flex-basis: 200px;
+
+    }
+    .two{
+    background-color: blue;
+         ===flex grow=== 
+    flex-grow: 9; 
+    
+         ===flex shrink===
+    flex-shrink: 2; 
+
+    ===flex basis=== 
+        flex-basis: 400px;
+
+    }
+    .three{
+        background-color: green;
+        /===flex grow===
+        flex-grow: 3; 
+        
+        /===flex shrink===
+        flex-shrink: 14; 
+
+         ===flex basis=== 
+        flex-basis: 300px; 
+        
+         ====flex====
+        ------------
+        flex: grow shrink basis; 
+
+    }    */
+
+/* ===menu base styles=== */
+nav{
+    background: #333;
+}
+nav ul{
+    list-style-type:none ;
+    padding:0;
+}   
+nav a{
+    text-decoration: none;
+    color:#fff;
+    display:block;
+    padding:10px;
+    background-color: #7777;
+}    
+nav a:hover{
+    background-color: #555;
+}
+a.tw{
+    background: url(img/thumb-1.png) no-repeat center;
+    background-size: 80%;
+}
+a.fb{
+    background: url(img/thumb-2.png) no-repeat center;
+    background-size: 80%;
+}
+.social a{
+    text-indent: -99999px;
+}
+.social{
+    max-width: 80px;
+    margin: 0 auto;
 
 }
-.box{
-    height:100px;
-    min-width: 100px;
-    float: left;
+nav ul.social{
+    flex: 1 1 0;
+    display: flex;
 }
-.one{
-    background-color: red;
+
+nav ul.social li{
+    flex:1 1 0;
+
 }
-.two{
-   background-color: blue; 
-}
-.three{
-    background-color: green;
-}
+/* ====flex styles==== */
+@media screen and (min-width:768px){
+    nav ul{
+        display:flex;
+        justify-content: space-around;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .social{
+        margin:0;
+    }
+    
+}      
