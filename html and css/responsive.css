@@ -1,65 +1,99 @@
-*{
+* {
     font-family: 'Poppins', sans-serif;
 }
-nav{
+
+/* ================== NAVBAR ================== */
+nav {
     background: #333;
-    
-    position:sticky;
-    top:0;
-    left:0;
-    width:100%;
-    height:40px;
-    z-index:1;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 1;
 }
-nav ul:after{
-   content:"";
-   display:block;
-   clear:both; 
+
+nav ul:after {
+    content: "";
+    display: block;
+    clear: both;
 }
-nav ul{
+
+nav ul {
+
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
-nav li{
+
+nav li {
     list-style-type: none;
     margin: 0 10px;
-    color:#fff;
-     float:right; 
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    float:right;
 }
-nav li:hover{
-    color:red;
-}
-header{
-    text-align:center;
-    border:1px solid black;
-    position:relative;
-    margin:2px;
-    height:250px;
-    box-shadow: 0 2px 4px red;
 
+nav li:hover {
+    color: red;
 }
-header img{
+
+.hello-nav {
+    background-color: #333;
+    padding: 0 15px;
+    position: relative;
+    color: white;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    z-index: 11;
+}
+
+/* ================== HEADER ================== */
+header {
+    text-align: center;
+    border: 1px solid black;
+    margin: 2px;
+    height: 250px;
+    box-shadow: 0 2px 4px red;
+    position: relative;
+}
+
+header img {
     padding-top: 50px;
-    display:inline-block;
+    display: inline-block;
     width: 30%;
     height: 60%;
-    margin:0px 5%;
-    float:left;
+    margin: 0px 5%;
+    float: left;
 }
-.overview{
+
+/* ================== OVERVIEW ================== */
+.overview {
     text-align: center;
-    padding:30px 20px;
+    padding: 30px 20px;
     background-color: #fff;
     margin: 20px auto;
     max-width: 900px;
     border-left: 5px solid #3498db;
 }
-  .skills {
-        
-            justify-content: center;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-.skill{
+
+/* ================== SKILLS ================== */
+.skills {
+    justify-content: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.skill {
     float: left;
     background: #eee;
     width: 29%;
@@ -68,36 +102,6 @@ header img{
     height: 140px;
     position: relative;
     text-align: center;
-    
-}
-.project h2{
-    text-align: center;
-}
-
-footer{
-    border: 2px solid black;
-    height: 300px;
-    position:relative;
-    text-align: center;
-}
-footer h4{
-    text-align: center;
-}
-footer input{
-    padding-left:20px;
-}
-.projects{
-    padding:20px;
-    position:relative;
-    border:2px solid red;
-    height: 500px;
-}
-.projects h2
-{
-    text-align: center;
-}
-ul li{
-    list-style: none;
 }
 
 .skills::after {
@@ -106,56 +110,119 @@ ul li{
     clear: both;
 }
 
+/* ================== PROJECTS ================== */
+.projects {
+    padding: 20px;
+    position: relative;
+    border: 2px solid red;
+    height: 500px;
+}
 
+.project h2,
+.projects h2 {
+    text-align: center;
+}
 
-/* MEDIA QUERIES */
-/* tablet */
-@media screen and (max-width:768px){
-    footer{
-    background-color:blanchedalmond; 
-    }
-    .skill{
-        width:100%;
-    }
-     nav{
-        float:none;
-        clear:left;
-        width:100%;
-    }
-    nav ul{
-        margin:0;
-        padding:0;
-    }
-    nav ul li{
-        margin:10px 0;
-         text-align: center;
-        padding:0;
-        width:20%;
-    }
-    .front{
-        width:48%;       
+/* ================== FOOTER ================== */
+footer {
+    border: 2px solid black;
+    height: 300px;
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+}
 
+footer h4 {
+    text-align: center;
+}
+
+footer input {
+    padding-left: 20px;
+}
+
+/* ================== LIST DEFAULT ================== */
+ul li {
+    list-style: none;
+}
+
+/* ================== MEDIA QUERIES ================== */
+
+/* Tablet (up to 768px) */
+@media screen and (max-width: 768px) {
+    footer {
+        background-color: blanchedalmond;
     }
-    footer input{
-        width:50%;
+
+    .skill {
+        width: 100%;
+    }
+
+    nav {
+        float: none;
+        clear: left;
+        width: 100%;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul li {
+        margin: 10px 0;
+        text-align: center;
+        padding: 0;
+        width: 20%;
+    }
+
+   
+
+    footer input {
+        width: 50%;
         text-align: center;
     }
-} 
-/* mobile */
-@media screen and (max-width:480px){
-    footer{
-    background-color:blanchedalmond;
-    float:none;  
-    
+}
+
+/* Mobile (up to 600px) */
+@media screen and (max-width: 600px) {
+    footer {
+        background-color: blanchedalmond;
+        float: none;
     }
-    .skill{
-        width:90%; 
-        margin:20px 5%;         
+
+    .skill {
+        width: 90%;
+        margin: 20px 5%;
     }
-    footer input{
-        float:none;
-        width:96%;
+
+    footer input {
+        float: none;
+        width: 96%;
         margin: 30px 2% !important;
     }
-}          
- 
+
+    .hello-nav ul {
+        display: none;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: 100%;
+        background-color: #5a2828;
+        z-index: 10;
+    }
+
+    .hello-nav ul.open {
+        display: block;
+    }
+
+    .hello-nav ul li {
+        text-align: center;
+        border-top: 1px solid #444;
+        color: white;
+        display:block;
+    }
+
+    .menu-icon {
+        display: block;        
+    }
+}

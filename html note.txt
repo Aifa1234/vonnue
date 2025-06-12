@@ -5,6 +5,13 @@ structure content using tags
 form
 ------
 name field is used in serverside
+picture tags
+-----------
+<picture>
+  <source srcset="small.png" media="(max-width:480px)">
+  <source srcset="medium.png" media="(max-width:768px)">
+  <img srcset ="big.png">
+</picture>
 css 
 ====  
 inline element
@@ -115,6 +122,12 @@ responsive images
 only load smaller images for mobile devices
 tablet 768px
 mobiles 480px
+
+framework
+---------
+Skeleton
+Foundation
+Bootsrap        
 
 fixed and fluid layout
 -----------------------
