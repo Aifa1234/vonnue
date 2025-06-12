@@ -75,7 +75,7 @@ body{
 
     }    */
 
-/* ===menu base styles=== */
+/* ===menu base styles=== 
 nav{
     background: #333;
 }
@@ -118,7 +118,7 @@ nav ul.social li{
     flex:1 1 0;
 
 }
-/* ====flex styles==== */
+     ====flex styles====
 @media screen and (min-width:768px){
     nav ul{
         display:flex;
@@ -131,5 +131,33 @@ nav ul.social li{
     .social{
         margin:0;
     }
+}       */
+
+.flex-container{
+    display: flex;
+    background: #fff;
+    flex-wrap: wrap;
+    flex-flow:row;
+    /* justify-content: flex-end; */
+    align-items: end;
+    /* justify-content: center; */
+} 
+.box{
+        height:10px; 
+         flex:0 0 100px; 
+         width:50px
+                
+    }
+    .one{
+        background-color: red;
+        
+    }
+    .two{
+    background-color: blue;
+       
+    }
+    .three{
+        background-color: green;
+     
+    }     
     
-}      
