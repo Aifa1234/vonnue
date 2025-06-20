@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+    <div class="wrapper">
+
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Store</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        <ul class="social">
+            <li><a href="" class="fb">Facebook</a></li>
+            <li><a href="" class="tw">Twitter</a></li>
+        </ul>
+    </nav> 
+    <div style="margin:20px;">
+        <span>Layout:</span>
+        <a href="#" class="stack">Stack</a>
+        <a href="#" class="grid">Grid</a>
+    </div>
+    <section id="block">
+        <article class="one">
+            <h2>para1</h2>
+            <p>
+                The internet has transformed the way we 
+                communicate, learn, and share information.
+                With just a few clicks, we can access a vast
+                world of knowledge, connect with people across
+                the globe, and even work or study from the 
+                comfort of our homes. While it brings many
+                advantages, it's also important to use it wisely
+                and responsibly, ensuring privacy, kindness, and
+                 accuracy in the digital space.
+            </p>
+        </article>
+        <article class="two">
+            <h2>para2</h2>
+            <p>
+                The internet has transformed the way we 
+                communicate, learn, and share information.
+                With just a few clicks, we can access a vast
+                world of knowledge, connect with people across
+                the globe, and even work or study from the 
+                comfort of our homes. While it brings many
+                advantages, it's also important to use it wisely
+                and responsibly, ensuring privacy, kindness, and
+                 accuracy in the digital space.
+            </p>
+        </article>
+        <article class="three">
+            <h2>para3</h2>
+            <p>
+                The internet has transformed the way we 
+                communicate, learn, and share information.
+                With just a few clicks, we can access a vast
+                world of knowledge, connect with people across
+                the globe, and even work or study from the 
+                comfort of our homes. While it brings many
+                advantages, it's also important to use it wisely
+                and responsibly, ensuring privacy, kindness, and
+                 accuracy in the digital space.
+            </p>
+        </article>
+        <article>
+            <h2>para1</h2>
+            <p>
+                The internet has transformed the way we 
+                communicate, learn, and share information.
+                With just a few clicks, we can access a vast
+                world of knowledge, connect with people across
+                the globe, and even work or study from the 
+                comfort of our homes. While it brings many
+                advantages, it's also important to use it wisely
+                and responsibly, ensuring privacy, kindness, and
+                 accuracy in the digital space.
+            </p>
+        </article>
+
+    </section>
+   </div>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+   <script>
+    $("a.stack").on("click",function(){
+        $("article").addClass("stack")
+    });
+    $("a.grid").on("click",function(){
+        $("article").removeClass("stack")
+    });
+   </script>
+</body>
+</html>
+        
+      
